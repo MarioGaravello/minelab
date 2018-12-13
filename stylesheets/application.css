@@ -5120,7 +5120,30 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #header #quick-search {
     position: relative;
     top: 0.65em;
-    z-index: 5; }
+    z-index: 5;
+    display: inline-flex;
+  }
+  #header #quick-search #project-jump{
+    padding-left: 10px;
+    display: -webkit-box;
+  }
+  #header #quick-search #project-jump .all-projects{
+    position: relative;
+    top: 0.5em;
+  }
+  #header #quick-search #project-jump .drdn-trigger{
+    position: relative;
+    top: 0.5em;
+  }
+  #header #quick-search #project-jump .drdn-trigger{
+    padding-right: 10px;
+  }
+  #header #quick-search #project-jump .drdn-content{
+    display: -webkit-box;
+  }
+  #header #quick-search #project-jump .drdn-content .quick-search{
+    padding-right: 10px;
+  }
     #header #quick-search .icon-search:before {
       z-index: 5;
       position: absolute;
@@ -5255,10 +5278,9 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     content: "";
     display: table; }
   #main.nosidebar #content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    border-right: 0;
+  }
     #main.nosidebar #content:last-child {
       margin-right: 0; }
   #main #hide-sidebar-button {
@@ -5324,6 +5346,14 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
       background: none !important; }
     #main #sidebar .icon-time {
       font-size: 2em; }
+
+#content {
+  background-color: #fff;
+  margin: 0px;
+  border-right: 1px solid #ddd;
+  padding: 6px 10px 10px 10px;
+  z-index: 10;
+}
   #main #content {
     float: left;
     display: block;
@@ -5402,9 +5432,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
       background: #446E9B;
       color: white; }
 
-/* Login */
-#login-form input#username, #login-form #login-form input#password {
-  width: 20em; }
+/* Login
 #login-form table {
   margin-top: 5em;
   margin-left: auto;
@@ -5416,7 +5444,43 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
 #login-form tr {
   background: none !important; }
 #login-form #username, #login-form #password {
-  width: 100%; }
+  width: 100%; }*/
+#login-form {
+  margin: 5em auto 2em auto;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  border-top-color: rgb(204, 204, 204);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: rgb(204, 204, 204);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: rgb(204, 204, 204);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(204, 204, 204);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(249, 249, 249);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 div.modal {
   border-radius: 4px;
